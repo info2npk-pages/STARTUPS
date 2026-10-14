@@ -1,0 +1,44 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /* */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+} 
+
+body { 
+  height: 100vh; /* Changed from 25vh to fill the whole screen */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: lightgray; 
+} 
+
+/* The main outer container gets the pill shape and shadow */
+.nav { 
+  background: limegreen; 
+  padding: 10px 20px; 
+  border-radius: 50px; 
+  box-shadow: 0 15px 35px rgba(0,0,0,.35); /* */
+} 
+
+/* The list handles layout alignment */
+.nav ul { 
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Adds clean spacing between your links */
+} 
+
+/* The links handle readability and clickability */
+.nav a { 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  display: block;
+}
+
+/* Optional: Add a subtle hover effect for better UX */
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+}
